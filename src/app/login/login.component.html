@@ -1,0 +1,21 @@
+
+<form [formGroup]="login">
+<input type="text" formControlName='mail'><br>
+<input type="text" formControlName='name'><br>
+<input type="password" formControlName="password"><br>
+<button type="submit" (click)="save()">Register</button><br>
+</form>
+
+
+<!-- <button (click)="fruit()">Fruit 1</button>
+
+<br>
+<button (click)="drink()">drinks 2</button> -->
+<button (click)="view()">view</button>
+<div *ngFor="let item of value">
+  {{item.id}}
+  {{item.name}}
+  {{item.password}}
+
+</div>
+

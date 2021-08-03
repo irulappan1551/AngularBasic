@@ -1,0 +1,15 @@
+
+<h5> testComponent</h5>
+<h4>Input {{name5}}</h4>
+<button (click)="outputEvent()">send event</button>
+
+<p *ngIf="visible">Hi,I'm Google</p>
+
+<h1>Pipes</h1>
+
+{{name | uppercase}}<br>
+{{name | titlecase}}<br>
+{{message | slice:2:5}}<br>
+{{0.50 | percent}}<br>
+{{0.50 | currency:'INR'}}
+
